@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+    <form action="">
+      Nombre: <input type="text" id="nombre">
+      Edad:   <input type="text" id="edad">
+      <input type="button" onClick="crearDocumento(getElementById('nombre').value,
+    getElementById('edad').value);" value="Crear documento">
+    </form>
+    <script type="text/javascript">
+    	function crearDocumento(){
+    		var doc = document.open("text/html","replace");
+    		var texto = "<html><body><h1>Saludo</h1>Hola " + nombre + ". Tu edad es de " + edad + " años.";
+    		doc.write(texto);
+    		doc.close();
+
+    	}
+    </script>
+</body>
+</html>
