@@ -113,8 +113,8 @@
     float: none;
     display: block;
     text-align: left;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
   }
   .gb-topnav.responsive a:hover {
   color: #cc0099;
