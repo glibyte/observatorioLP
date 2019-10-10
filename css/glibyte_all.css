@@ -10,3 +10,14 @@ body {
 .gb-text1{
 font-size: 20px;
 }
+
+/*Lienas en las paginas*/
+.gb-rectangulo1{
+  height: 60px;
+  color: white;
+}
+
+.gb-rectangulo2{
+  height: 60px;
+  width: 100%;
+}

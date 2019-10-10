@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/gb_icon.css">
   <link rel="stylesheet" type="text/css" href="css/gb_rectanguglos.css">
   <link rel="stylesheet" type="text/css" href="css/gb_color.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/4.7.0/css/font-awesome.min.css">
   <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 </head>
 <body>
@@ -20,30 +21,28 @@
   <div class="gb-header">
     
     <a href="index.html">
-    <div class="logo gb-color-negro-1">
-      <h1>
-      Logo
-    </h1>
+    <div class="logo">
+      <img src="img/logos/330x200/logo.png" alt="logo">
     </div>
     </a>
 
     <!--Menu-->
-  <nav class="gb-navbar">
-    <a href="contacto.html">Contacto</a>
-    <a href="#!">Noticias</a>
-    <a href="campañas.html">Campañas</a>
-    <a href="proyectos.html">Proyectos</a>
+  <nav class="gb-topnav" id="myTopnav">
     <div class="dropdown">
     <button class="dropbtn">Nosotros 
       <i class="icon-circle-down" style="font-size: 15px;"></i>
     </button>
     <div class="dropdown-content">
-      <a href="#!">Nosotros</a>
+      <a class="active" href="nosotros.html">Nosotros</a>
       <a href="#">Misión</a>
       <a href="#">Visión</a>
     </div>
-  </div> 
+  </div>
+  <a href="proyectos.html">Proyectos</a>
     <a href="index.html">Inicio</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </nav>
   <!--Fin Menu-->
 
@@ -336,6 +335,15 @@
                     </h6>
             </div>
   </footer>
-
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "gb-topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "gb-topnav";
+  }
+}
+</script>
 </body>
 </html>
